@@ -46,12 +46,12 @@ public class StudentsController {
         Student student = studentsService.getStudentById(id);
         return student;
     }
-//
+/*
     @RequestMapping(path = "/setStudentById", method = RequestMethod.POST)
     public void setStudent(@RequestBody Student student) {
         System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getCountry());
     }
-//
+*/
     @RequestMapping("/showForm")
     public String showSimpleForm(Model uiModel) {
         Student student = new Student();
